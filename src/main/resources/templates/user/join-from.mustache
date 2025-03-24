@@ -1,0 +1,29 @@
+{{>layout/header}}
+<!--네브바 종료, 레이아웃의 헤더-->
+<!--마진 : mt, mr, ml, mb(1~5) (top,right,left,bottom) ex)mt-5-->
+
+<div class="m-4 p-5 bg-light text-info rounded-4">
+    <h1>회원가입 페이지</h1>
+    <form action="/join" method="post">
+        <div class="mb-3 mt-3">
+            <input type="text" class="form-control" placeholder="Enter email" name="username">
+        </div>
+        <div class="mb-3">
+            <input type="password" class="form-control" placeholder="Enter password" name="password">
+        </div>
+        <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Enter fullname" name="fullname">
+        </div>
+        <div class="form-check mb-3">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember"> 아이디를 기억하시겠습니까?
+            </label>
+        </div>
+        <button type="summit" class="btn btn-primary">회원가입</button>
+    </form>
+</div>
+
+<div class="container mt-5">
+
+</div>
+{{>layout/footer}}

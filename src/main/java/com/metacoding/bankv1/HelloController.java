@@ -24,11 +24,11 @@ public class HelloController {
     }
     @GetMapping("t5")
     public String t5(){
-        return "layout/footer";
+        return "user/join";
     }
     @GetMapping("t6")
     public String t6(){
-        return "layout/header";
+        return "user/login";
     }
     @GetMapping("t7")
     public String t7(){

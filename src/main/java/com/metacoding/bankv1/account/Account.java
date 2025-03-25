@@ -16,7 +16,7 @@ public class Account {
     @Id
     private Integer number; //계좌번호 Pk 사용자로부터 받아서 넣음 auto_increment 없음
     private String password;
-    private String balance;
+    private Integer balance;
     private String userId; //FK
     private Timestamp createdAt;
 }

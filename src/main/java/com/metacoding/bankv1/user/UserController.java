@@ -28,14 +28,11 @@ public class UserController {
 
     @GetMapping("/login-form")
     public String loginform(){
-        session.setAttribute("metacoding", "apple");
         return "/user/login-form";
     }
 
     @GetMapping("/join-form")
     public String joinform(){
-        String value= (String)session.getAttribute("metacoding");
-        System.out.println("value:"+value  );
         return "/user/join-form";
     }
 

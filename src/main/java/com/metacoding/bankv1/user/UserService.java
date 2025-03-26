@@ -3,14 +3,14 @@ package com.metacoding.bankv1.user;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
+
 
 @RequiredArgsConstructor
 @Service
 public class UserService {
     private final UserRepository userRepository;
 
-    @Transactional
+@Transactional
     public void 회원가입(UserRequest.JoinDTO joinDTO) {
 //1. 동일 유저네임 있는지 검사
         User user = userRepository.findByUsername(joinDTO.getUsername());
